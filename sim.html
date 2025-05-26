@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>PRESENTE 🎁</title>
+          <link href="reset.css" rel="stylesheet">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+          
+          <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+          <link href="style.css" rel="stylesheet">
+    </head>
+
+
+       <script
+        type="text/javascript"
+        async
+      ></script>
+      <h1>Qual foi o dia que você comeu o bolo de cenoura que eu fiz?</h1>
+       <img src="src/miranha_dica.jpg" alt="Miranha GIF" style="max-width: 230px; display: block; margin: 0 auto;">
+
+      <p>dica: nem precisa né? mwuahahaha</p>
+
+
+         <div class="resposta-box">
+        <input type="texto" id="resposta" placeholder="resposta">
+        <button id="verificar">conferir</button>
+        <div class="dica"></div>
+      </div>
+
+        <div>
+        <p></p>
+       
+      </div>
+
+      <script>
+// Substitua 'sua_resposta_correta' pela resposta correta desejada
+const respostaCorreta = "25 de novembro";
+
+document.getElementById("verificar").addEventListener("click", function() {
+    const resposta = document.getElementById("resposta").value.trim().toLowerCase();
+    if (resposta === respostaCorreta.toLowerCase()) {
+        window.location.href = "index2.html";
+    } else {
+        document.querySelector(".dica").textContent = "Como que tu errou isso? Da nem pra acreditar. Pode tratar de tentar de novo e acertar. 😠";
+    }
+});
+</script>
+</html>
